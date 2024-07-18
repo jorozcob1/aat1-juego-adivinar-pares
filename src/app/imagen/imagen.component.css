@@ -1,0 +1,24 @@
+.contenedor-imagenes {
+  display: flex;
+  flex-direction: row;
+  /* Alinea los elementos horizontalmente */
+  gap: 10px;
+  /* Espacio entre imágenes */
+  align-items: center;
+  /* Centra las imágenes verticalmente */
+  overflow-x: auto;
+  /* Permite desplazamiento horizontal si el contenido excede el ancho de la pantalla */
+  width: 100%;
+  /* Ajusta el ancho según necesites */
+  height: 150px;
+  /* Altura fija */
+}
+
+.contenedor-imagenes img {
+  height: 100%;
+  /* Hace que las imágenes llenen la altura del contenedor */
+  width: auto;
+  /* Mantiene la proporción de las imágenes */
+  object-fit: cover;
+  /* Asegura que la imagen cubra el espacio asignado sin perder proporciones */
+}

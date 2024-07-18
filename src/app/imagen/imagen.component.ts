@@ -1,17 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ImgRandomService } from './services/img-random.service';
+import { Component, OnInit } from '@angular/core';
+import { ImgRandomService } from '../services/img-random.service';
 import { HttpClientModule } from '@angular/common/http';
-
 @Component({
-  selector: 'app-root',
+  selector: 'app-imagen',
   standalone: true,
-  imports: [RouterOutlet, HttpClientModule],
+  imports: [HttpClientModule],
   providers: [ImgRandomService],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  templateUrl: './imagen.component.html',
+  styleUrl: './imagen.component.css',
 })
-export class AppComponent {
+export class ImagenComponent implements OnInit {
   datosImg: any[] = [];
 
   constructor(private imgRandom: ImgRandomService) {}
